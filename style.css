@@ -9,7 +9,7 @@ body
 }
 nav
 {
- background-color: #2589;
+ background-color: rgba(100, 160, 219, 0.6);
  height: 10%;
  width: 100%;
 }
@@ -41,18 +41,20 @@ nav ul li a
 {
     text-decoration: none;
     color: white;
-    padding: 20px 10px 0 10px;
+    padding: 10px 10px 0 10px;
     
 }
 /* Very important line */
 nav ul li:hover > ul
 {
     display: block;
+ 
    
 }
 nav ul li>ul
 {
-    padding: 10 0 0 30px;
+    left:15px
+    
 }
 nav li > ul
 {
@@ -61,12 +63,28 @@ nav li > ul
    display: none;
 }
 
+/* 2nd (inside of JS )dropdown feature */
+nav ul ul ul
+{
+    position: absolute;
+    top: 2px;
+    left: 35px;
+    color: white;
+    font-size: 13px;
+    text-transform: uppercase;
+    padding: 0;
+    display: none;
+}
+
+
+
 /* drop down arrow css */
 nav li i
 {
     color: white;
     margin: 1px 0 0 -2px;
 }
+
 
 /* Creating underline animation effect
 want to now more: c dis: https://www.youtube.com/watch?v=TbmdISaTkNw&ab_channel=SteveGriffith-Prof3ssorSt3v3
@@ -96,7 +114,6 @@ a:hover
 {
     cursor: pointer;
 
-   
 }
 
 
